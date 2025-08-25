@@ -1,0 +1,25 @@
+[project]
+name = "nanogpt-clone"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Aleksandar Gujas",email = "aleksandar.gujas@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.11,<3.14"
+dependencies = [
+    "torch (>=2.8.0,<3.0.0)",
+    "torchvision (>=0.23.0,<0.24.0)",
+    "jupyter (>=1.1.1,<2.0.0)",
+    "matplotlib (>=3.10.5,<4.0.0)",
+    "pytest (>=8.4.1,<9.0.0)",
+    "numpy (>=2.3.2,<3.0.0)"
+]
+
+[tool.poetry]
+packages = [{include = "nanogpt_clone", from = "src"}]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
